@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Smart Campus Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>SmartCampus</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<section class="content">
+    <h2>Get In Touch</h2>
+    <p class="section-subtitle">Have questions? We'd love to hear from you!</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; max-width: 1000px; margin: 0 auto; align-items: start;">
+        <!-- Contact Information -->
+        <div>
+            <h3 style="color: #667eea; margin-bottom: 30px; font-size: 1.5em;">Contact Information</h3>
+            
+            <div style="display: flex; gap: 20px; margin-bottom: 30px; padding: 20px; background: #f8f9ff; border-radius: 12px; align-items: flex-start;">
+                <i class="fas fa-map-marker-alt" style="color: #667eea; font-size: 1.5em; margin-top: 5px;"></i>
+                <div>
+                    <h4>Address</h4>
+                    <p>123 Education Street, Tech Campus<br>Smart City, SC 12345</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 20px; margin-bottom: 30px; padding: 20px; background: #f8f9ff; border-radius: 12px; align-items: flex-start;">
+                <i class="fas fa-phone" style="color: #667eea; font-size: 1.5em; margin-top: 5px;"></i>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+1 (800) SMART-CAMPOUS<br>+1 (800) 762-7827</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 20px; margin-bottom: 30px; padding: 20px; background: #f8f9ff; border-radius: 12px; align-items: flex-start;">
+                <i class="fas fa-envelope" style="color: #667eea; font-size: 1.5em; margin-top: 5px;"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>info@smartcampus.edu<br>support@smartcampus.edu</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 20px; padding: 20px; background: #f8f9ff; border-radius: 12px; align-items: flex-start;">
+                <i class="fas fa-clock" style="color: #667eea; font-size: 1.5em; margin-top: 5px;"></i>
+                <div>
+                    <h4>Business Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Full Name" required>
+                <input type="email" id="email" placeholder="Your Email Address" required>
+                <input type="text" placeholder="Institution/Organization" style="margin-bottom: 20px; padding: 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1em;">
+                <textarea id="message" placeholder="Tell us about your inquiry..." rows="5" required></textarea>
+                <button type="submit" style="margin-top: 10px;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <p id="formMessage"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <h2>Ready to Transform Your Campus?</h2>
+    <p>Schedule a demo with our team today and see Smart Campus in action!</p>
+    <button class="btn btn-light" onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'})">
+        <i class="fas fa-calendar"></i> Schedule Demo
+    </button>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>SmartCampus</h4>
+            <p>Transforming education through smart technology</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Smart Campus Management System | Designed with <i class="fas fa-heart"></i> for Education</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
